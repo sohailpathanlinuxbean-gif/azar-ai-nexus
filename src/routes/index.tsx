@@ -12,13 +12,13 @@ import { Footer } from "@/components/footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Azar Shaikh — AI & ML Engineer | LLMs, RAG, Agentic AI, Computer Vision" },
+      { title: "Aazar Shaikh — AI & ML Engineer | LLMs, RAG, Agentic AI, Computer Vision" },
       {
         name: "description",
         content:
           "Freelance AI/ML engineer building GenAI, LLM & RAG systems, agentic AI, reinforcement learning, and computer vision products end-to-end.",
       },
-      { property: "og:title", content: "Azar Shaikh — AI & ML Engineer" },
+      { property: "og:title", content: "Aazar Shaikh — AI & ML Engineer" },
       {
         property: "og:description",
         content:
