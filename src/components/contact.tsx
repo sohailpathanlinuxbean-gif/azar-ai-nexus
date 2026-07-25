@@ -25,15 +25,18 @@ export function Contact() {
           <div className="md:col-span-2 space-y-3">
             {[
               { icon: Mail, label: "shaikhaazar11@gmail.com", href: "mailto:shaikhaazar11@gmail.com" },
-              { icon: Linkedin, label: "linkedin.com/in/aazar", href: "www.linkedin.com/in/aazar-shaikh" },
+              { icon: Linkedin, label: "linkedin.com/in/aazar-shaikh", href: "https://www.linkedin.com/in/aazar-shaikh" },
               // { icon: Github, label: "github.com/aazar", href: "#" },
               // { icon: Briefcase, label: "Upwork / Fiverr", href: "#" },
             ].map((s) => {
               const Icon = s.icon;
+              const isExternal = s.href.startsWith("http");
               return (
                 <a
                   key={s.label}
                   href={s.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noopener noreferrer" : undefined}
                   className="group flex items-center gap-3 glass-card glass-card-hover px-4 py-3"
                 >
                   <span className="grid h-9 w-9 place-items-center rounded-lg bg-white/5 text-cyan transition-colors group-hover:bg-cyan/10">
