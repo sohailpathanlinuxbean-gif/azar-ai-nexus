@@ -1,0 +1,11 @@
+[build]
+  command = "bun run build"
+  # Nitro's netlify preset writes static assets here and the SSR handler
+  # to .netlify/functions-internal/server (picked up by Netlify automatically).
+  publish = "dist"
+
+[build.environment]
+  # Without this the build targets Cloudflare Workers (the config default)
+  # and emits .output/ instead of anything Netlify can serve.
+  NITRO_PRESET = "netlify"
+  NODE_VERSION = "22"
