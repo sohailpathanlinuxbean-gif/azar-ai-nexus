@@ -8,49 +8,48 @@ type Project = {
   tech: string[];
 };
 
-// PLACEHOLDER projects — replace with your real projects
 const projects: Project[] = [
   {
-    title: "MediRAG — Clinical Q&A Assistant",
+    title: "Global Trade Data Analytics Platform",
     description:
-      "RAG-powered assistant for clinicians to query medical literature with cited answers, hybrid search, and guardrails.",
-    category: "RAG Systems",
-    tech: ["LangChain", "Pinecone", "OpenAI", "FastAPI"],
+      "Enterprise analytics platform that turns natural-language business questions into OpenSearch queries over millions of trade records, returning KPIs, time-series, pivot reports, and dashboard-ready visualizations.",
+    category: "GenAI · Analytics",
+    tech: ["Python", "FastAPI", "OpenSearch", "MSSQL", "LLMs", "Docker", "Azure"],
   },
   {
-    title: "AgentDesk — Autonomous Support Agent",
+    title: "CS Reporting Application — ERP Platform",
     description:
-      "Multi-tool agentic system that triages tickets, queries internal APIs, and drafts responses with human-in-the-loop.",
-    category: "AI Chatbots",
-    tech: ["Agentic AI", "MCP", "LangGraph", "Postgres"],
+      "Large-scale full-stack reporting dashboard for an ERP ecosystem. Built scalable microservices, REST APIs, and optimized backend logic for report generation, aggregation, and dashboard visualizations over enterprise datasets.",
+    category: "Backend · Microservices",
+    tech: ["Python", "Django", "DRF", "FastAPI", "SQL", "Docker", "Azure"],
   },
   {
-    title: "VisionCount — Retail Analytics",
+    title: "AI & Deep Learning — Subject Matter Expert",
     description:
-      "Real-time object detection pipeline for footfall & shelf analytics, running on-device with edge inference.",
-    category: "Computer Vision Apps",
-    tech: ["YOLOv8", "OpenCV", "PyTorch", "Docker"],
+      "Mentored learners on Deep Learning and Transformer architectures — CNNs, RNNs, LSTMs, attention, self-attention, encoder-decoder — and guided practical NLP and Computer Vision projects in PyTorch.",
+    category: "AI Mentoring · Deep Learning",
+    tech: ["PyTorch", "Transformers", "LLMs", "NLP", "Computer Vision"],
   },
   {
-    title: "PatientFlow Automator",
+    title: "Delivery Route Optimization with RL",
     description:
-      "Automated intake & scheduling workflow for a healthcare provider, cutting admin time by 60%.",
-    category: "Health Sector Automation",
-    tech: ["n8n", "FastAPI", "OpenAI", "Twilio"],
+      "Modeled delivery operations as Markov Decision Processes and built simulation environments to solve route planning via Value Iteration and Q-Value Iteration, comparing policy effectiveness and convergence.",
+    category: "Reinforcement Learning",
+    tech: ["Python", "RL", "MDP", "Value Iteration", "Simulation"],
   },
   {
-    title: "ChurnRL — RL Retention Engine",
+    title: "Queue Admission Control with RL",
     description:
-      "Reinforcement learning agent optimizing next-best-action for subscription retention across cohorts.",
-    category: "ML Models",
-    tech: ["PyTorch", "Ray RLlib", "AWS", "MLflow"],
+      "Solved a queue admission control problem using discrete and continuous MDPs, dynamic programming, and function approximation with deep neural networks — implementing Policy Iteration, Value Iteration, Q-Learning, and SARSA.",
+    category: "Reinforcement Learning",
+    tech: ["Python", "PyTorch", "MDP", "Q-Learning", "SARSA", "DNN"],
   },
   {
-    title: "DocuMind — Enterprise Knowledge",
+    title: "Maximum Likelihood Estimation Optimization",
     description:
-      "Private ChatGPT over 100k internal docs with role-based access, source citations, and Slack integration.",
-    category: "RAG Systems",
-    tech: ["ChromaDB", "LangChain", "Django", "React"],
+      "Optimized computationally intensive MLE algorithms for massive datasets with custom low-level PyTorch ops and C-Python extensions, delivering CPU- and GPU-optimized implementations with major throughput gains.",
+    category: "HPC · Numerical Optimization",
+    tech: ["Python", "PyTorch", "C Extensions", "CUDA", "HPC"],
   },
 ];
 
@@ -61,7 +60,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Selected Work"
           title="Projects & case studies."
-          subtitle="A snapshot of AI systems I've built for clients across chatbots, RAG, computer vision, and healthcare automation."
+          subtitle="A snapshot of AI and backend systems I've built — spanning GenAI analytics, RL, deep learning, and enterprise microservices."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -98,10 +97,6 @@ export function Projects() {
             </a>
           ))}
         </div>
-
-        <p className="mt-8 text-center text-xs italic text-muted-foreground/60">
-          [Placeholder projects — replace with your real work.]
-        </p>
       </div>
     </section>
   );
