@@ -4,21 +4,15 @@ import { SectionHeading } from "./about";
 const testimonials = [
   {
     quote:
-      "Azar delivered our RAG platform in weeks, not months. The evaluation pipeline he built saved us from shipping a broken assistant.",
-    name: "Placeholder Client",
-    role: "CTO, HealthTech Startup",
+      "Aazar was very professional and quick to understand the problem. He delivered ahead of time with perfection. I will highly recommend Aazar for RL/ML/Stochastic Processes-related jobs. He has sound theoretical understanding and great coding skills.",
+    name: "Client Review",
+    role: "RL / ML / Stochastic Processes Project",
   },
   {
     quote:
-      "One of the few AI engineers I've worked with who thinks in systems, not demos. Our agent went straight to production.",
-    name: "Placeholder Client",
-    role: "Founder, SaaS Agency",
-  },
-  {
-    quote:
-      "Rare combo of ML depth and shipping speed. Our vision pipeline runs on-device and just works.",
-    name: "Placeholder Client",
-    role: "Product Lead, Retail AI",
+      "Aazar is a genuine and hard worker. He worked on a Python project for our client. Definitely recommend. Wishing him all the best for future assignments.",
+    name: "Client Review",
+    role: "Python Development Project",
   },
 ];
 
@@ -32,7 +26,7 @@ export function Testimonials() {
           subtitle="A few kind words from teams I've built with."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
           {testimonials.map((t, i) => (
             <figure key={i} className="glass-card glass-card-hover p-6 flex flex-col">
               <Quote className="text-cyan" size={28} />
@@ -46,10 +40,8 @@ export function Testimonials() {
             </figure>
           ))}
         </div>
-        <p className="mt-8 text-center text-xs italic text-muted-foreground/60">
-          [Placeholder testimonials — replace with real client quotes.]
-        </p>
       </div>
     </section>
   );
 }
+
