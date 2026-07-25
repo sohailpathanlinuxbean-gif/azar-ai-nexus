@@ -24,10 +24,10 @@ export function Contact() {
 
           <div className="md:col-span-2 space-y-3">
             {[
-              { icon: Mail, label: "azar@example.com", href: "mailto:azar@example.com" },
-              { icon: Linkedin, label: "linkedin.com/in/azar", href: "#" },
-              { icon: Github, label: "github.com/azar", href: "#" },
-              { icon: Briefcase, label: "Upwork / Fiverr", href: "#" },
+              { icon: Mail, label: "shaikhaazar11@gmail.com", href: "mailto:shaikhaazar11@gmail.com" },
+              { icon: Linkedin, label: "linkedin.com/in/aazar", href: "www.linkedin.com/in/aazar-shaikh" },
+              // { icon: Github, label: "github.com/aazar", href: "#" },
+              // { icon: Briefcase, label: "Upwork / Fiverr", href: "#" },
             ].map((s) => {
               const Icon = s.icon;
               return (

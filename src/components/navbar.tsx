@@ -32,7 +32,7 @@ export function Navbar() {
           <span className="relative grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-cyan to-violet text-[#0a0e1a] shadow-[0_0_20px_oklch(0.82_0.18_210/0.4)]">
             AS
           </span>
-          <span className="hidden sm:inline">Azar<span className="text-cyan">.</span></span>
+          <span className="hidden sm:inline">Aazar<span className="text-cyan">.</span></span>
         </a>
 
         <ul className="hidden md:flex items-center gap-1">
