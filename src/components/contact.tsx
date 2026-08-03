@@ -24,7 +24,7 @@ export function Contact() {
 
           <div className="md:col-span-2 space-y-3">
             {[
-              { icon: Mail, label: "shaikhaazar11@gmail.com", href: "mailto:shaikhaazar11@gmail.com" },
+              { icon: Mail, label: "aazarshaikh77@gmail.com", href: "mailto:aazarshaikh77@gmail.com" },
               { icon: Linkedin, label: "linkedin.com/in/aazar-shaikh", href: "https://www.linkedin.com/in/aazar-shaikh" },
               // { icon: Github, label: "github.com/aazar", href: "#" },
               // { icon: Briefcase, label: "Upwork / Fiverr", href: "#" },
