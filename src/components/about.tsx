@@ -59,7 +59,6 @@ export function About() {
             </p>
             {/* PLACEHOLDER: Replace with your real bio */}
             <p className="text-sm italic text-muted-foreground/70">
-              [Placeholder bio — replace with your own voice.]
             </p>
           </div>
 

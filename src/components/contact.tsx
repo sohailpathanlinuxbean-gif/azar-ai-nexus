@@ -28,7 +28,7 @@ export function Contact() {
               { icon: Linkedin, label: "linkedin.com/in/aazar-shaikh", href: "https://www.linkedin.com/in/aazar-shaikh" },
               // { icon: Github, label: "github.com/aazar", href: "#" },
               // { icon: Briefcase, label: "Upwork / Fiverr", href: "#" },
-            ].map((s) => {
+            ].map((s) => { 
               const Icon = s.icon;
               const isExternal = s.href.startsWith("http");
               return (
